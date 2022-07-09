@@ -12,3 +12,5 @@ r:
 
 after_success:
   - Rscript -e 'covr::codecov()'
+
+theme: jekyll-theme-cayman

@@ -94,7 +94,7 @@ netds$type <- as.factor(netfx$Content_Type)
 
 Missing values can be problem for the next steps. Therefore, we have to check them before the analyse and then we can fill the missing values of some variables if it is necessary. 
 
-```r {r data_cleanin_missing_values}
+```r
 # printing the missing values by creating a new data frame 
 data.frame("Variable"=c(colnames(netfx)), "Missing Values"=sapply(netfx, function(x) sum(is.na(x))), row.names=NULL)
 ```
